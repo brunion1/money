@@ -14,23 +14,10 @@
 
 
 <ion-content padding>
-  <ion-card>
+  <ion-card *ngFor="let account of accounts">
     <ion-item>
-      <p>Checking Account (...7783)</p>
-      <h2>$1,000,000</h2>
+      <p>{{account.accountName}} ...({{account.accountNum}})</p>
+      <h2>{{account.balance | currency}}</h2>
     </ion-item>
   </ion-card>
-  <ion-card>
-    <ion-item>
-      <p>Savings Account (...0023)</p>
-      <h2>$0.22</h2>
-    </ion-item>
-  </ion-card>
-  <ion-card>
-    <ion-item>
-      <p>Home Loan (...1111)</p>
-      <h2>$313,133</h2>
-    </ion-item>
-  </ion-card>
-
 </ion-content>
