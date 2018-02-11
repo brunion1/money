@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SummaryPage } from '../pages/summary/summary';
 import { TransactionsPage } from '../pages/transactions/transactions';
+import { TransactionDetailsPage } from "../pages/transaction-details/transaction-details";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     SummaryPage,
-    TransactionsPage
+    TransactionsPage,
+    TransactionDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { TransactionsPage } from '../pages/transactions/transactions';
     MyApp,
     HomePage,
     SummaryPage,
-    TransactionsPage
+    TransactionsPage,
+    TransactionDetailsPage
   ],
   providers: [
     StatusBar,

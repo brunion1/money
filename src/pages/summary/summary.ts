@@ -23,7 +23,7 @@ export class SummaryPage {
   }
 
   seeTransactions(){
-    this.navCtrl.setRoot(TransactionsPage);
+    this.navCtrl.push(TransactionsPage);
   }
 
   ionViewDidLoad() {
