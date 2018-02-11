@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+
+import { TransactionsPage} from "../transactions/transactions";
 import accounts from '../../mocks/accounts';
 
 /**
@@ -18,6 +20,10 @@ export class SummaryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.accounts = accounts;
+  }
+
+  seeTransactions(){
+    this.navCtrl.setRoot(TransactionsPage);
   }
 
   ionViewDidLoad() {

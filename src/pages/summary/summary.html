@@ -14,7 +14,7 @@
 
 
 <ion-content padding>
-  <ion-card *ngFor="let account of accounts">
+  <ion-card *ngFor="let account of accounts" (click)="seeTransactions()">
     <ion-item>
       <p>{{account.accountName}} ...({{account.accountNum}})</p>
       <h2>{{account.balance | currency}}</h2>
